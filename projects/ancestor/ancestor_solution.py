@@ -60,3 +60,11 @@ def earliest_ancestor(ancestors, starting_node):
             path_copy.append(neighbor)
             q.enqueue(path_copy)
     return earliest_ancestor
+
+if __name__ == "__main__":
+    gg = Graph()
+    ancestors = [(1, 3), (2, 3), (3, 6), (5, 6), (5, 7), (4, 5), (4, 8), (8, 9), (11, 8), (10, 1)]
+    # ancestors = [(1, 3), (2, 3), (3, 6), (5, 6), (5, 7), (4, 5), (4, 8), (8, 9), (11, 8)]
+    print(earliest_ancestor(ancestors,9))
+    # print(gg.vertices)
+    # print(gg.dft(9))
